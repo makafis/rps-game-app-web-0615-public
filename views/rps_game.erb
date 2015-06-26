@@ -1,1 +1,18 @@
 <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
+<ul>
+    <li>
+      User Move: <%= @game.user_move %>
+    </li>
+    <li>
+      Computer Move: <%= @game.computer_play %>
+    </li>
+    <li>
+      Win, Loss, Draw?
+      <% if @game.won? == true %>
+       "YOU WIN"
+      <% elsif @game.tied? == true%>
+       "YOU TIE"
+      <% else %>
+      "YOU LOSE"
+      <% end %>
+</ul>
